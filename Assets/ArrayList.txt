@@ -1,0 +1,105 @@
+local ZephyrArraylist = Instance.new("ScreenGui")
+local MaxlaserArrayList = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+
+ZephyrArraylist.Name = "ZephyrArraylist"
+ZephyrArraylist.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ZephyrArraylist.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MaxlaserArrayList.Name = "MaxlaserArrayList"
+MaxlaserArrayList.Parent = ZephyrArraylist
+MaxlaserArrayList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MaxlaserArrayList.BackgroundTransparency = 1.000
+MaxlaserArrayList.Position = UDim2.new(0.870000005, 0, 0, 0)
+MaxlaserArrayList.Size = UDim2.new(0.129999995, 0, 1, 0)
+
+UIGridLayout.Parent = MaxlaserArrayList
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 20, 0, 20)
+UIGridLayout.CellSize = UDim2.new(1, 0, 0.0274999999, 0)
+
+UIAspectRatioConstraint.Parent = MaxlaserArrayList
+UIAspectRatioConstraint.AspectRatio = 0.200
+
+TextLabel.Parent = ZephyrArraylist
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.00992366951, 0, -0.0199999996, 0)
+TextLabel.Size = UDim2.new(0.18015267, 0, 0.129411757, 0)
+TextLabel.Font = Enum.Font.TitilliumWeb
+TextLabel.Text = "Zephyr V4.72"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint_2.Parent = TextLabel
+UIAspectRatioConstraint_2.AspectRatio = 2.145
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 63
+
+-- Scripts:
+
+local function ISRAFM_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	local text = script.Parent
+	local add = 10
+	wait(1)
+	local k = 1
+	while k <= 255 do
+		text.TextColor3 = Color3.new(k/255,0/255,0/255)
+		k = k + add
+		wait()
+	end
+	while true do
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,k/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255,k/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(k/255,0/255,255/255)
+			k = k + add
+			wait()
+		end
+		k = 1
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+			k = k + add
+			wait()
+		end
+		while k <= 255 do
+			text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+			k = k + add
+			wait()
+		end
+	end
+end
+coroutine.wrap(ISRAFM_fake_script)()
