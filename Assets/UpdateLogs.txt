@@ -1,0 +1,259 @@
+
+        local LogGui = Instance.new("ScreenGui")
+        local ZephyrUpdate = Instance.new("Frame")
+        local TextLabel = Instance.new("TextLabel")
+        local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+        local TextLabel_2 = Instance.new("TextLabel")
+        local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+        local TextLabel_3 = Instance.new("TextLabel")
+        local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+        local TextLabel_4 = Instance.new("TextLabel")
+        local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+        local TextLabel_5 = Instance.new("TextLabel")
+        local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+        local TextLabel_6 = Instance.new("TextLabel")
+        local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+        local Frame = Instance.new("Frame")
+        local Continue = Instance.new("TextButton")
+        local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+        local TextLabel_7 = Instance.new("TextLabel")
+        local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+        local TextLabel_8 = Instance.new("TextLabel")
+        local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+        local TextLabel_9 = Instance.new("TextLabel")
+        local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+        local TextLabel_10 = Instance.new("TextLabel")
+        local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+        
+        --Properties:
+        
+        LogGui.Name = "LogGui"
+        LogGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+        LogGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        
+        ZephyrUpdate.Name = "ZephyrUpdate"
+        ZephyrUpdate.Parent = LogGui
+        ZephyrUpdate.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+        ZephyrUpdate.BackgroundTransparency = 0.200
+        ZephyrUpdate.BorderColor3 = Color3.fromRGB(27, 42, 53)
+        ZephyrUpdate.Position = UDim2.new(0.0405405387, 0, 0.0576470569, 0)
+        ZephyrUpdate.Size = UDim2.new(0.917479396, 0, 0.884705901, 0)
+        
+        TextLabel.Parent = ZephyrUpdate
+        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.BackgroundTransparency = 1.000
+        TextLabel.Position = UDim2.new(0.00817661453, 0, 0, 0)
+        TextLabel.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel.Font = Enum.Font.SourceSans
+        TextLabel.Text = "Welcome to Zephyr v4.33!"
+        TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.TextScaled = true
+        TextLabel.TextSize = 35.000
+        TextLabel.TextWrapped = true
+        TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint.Parent = TextLabel
+        UITextSizeConstraint.MaxTextSize = 35
+        
+        TextLabel_2.Parent = ZephyrUpdate
+        TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_2.BackgroundTransparency = 1.000
+        TextLabel_2.Position = UDim2.new(0.00817661453, 0, 0.215425536, 0)
+        TextLabel_2.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_2.Font = Enum.Font.SourceSans
+        TextLabel_2.Text = "-- Fixed Sometimes Folder Doesnt Download"
+        TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_2.TextScaled = true
+        TextLabel_2.TextSize = 35.000
+        TextLabel_2.TextWrapped = true
+        TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_2.Parent = TextLabel_2
+        UITextSizeConstraint_2.MaxTextSize = 35
+        
+        TextLabel_3.Parent = ZephyrUpdate
+        TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_3.BackgroundTransparency = 1.000
+        TextLabel_3.Position = UDim2.new(0.00735895289, 0, 0.101063833, 0)
+        TextLabel_3.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_3.Font = Enum.Font.SourceSans
+        TextLabel_3.Text = "-- Update To the same verison as minecraft"
+        TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_3.TextScaled = true
+        TextLabel_3.TextSize = 35.000
+        TextLabel_3.TextWrapped = true
+        TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_3.Parent = TextLabel_3
+        UITextSizeConstraint_3.MaxTextSize = 35
+        
+        TextLabel_4.Parent = ZephyrUpdate
+        TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_4.BackgroundTransparency = 1.000
+        TextLabel_4.Position = UDim2.new(0.00817661453, 0, 0.154255331, 0)
+        TextLabel_4.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_4.Font = Enum.Font.SourceSans
+        TextLabel_4.Text = "-- Add DeathTp"
+        TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_4.TextScaled = true
+        TextLabel_4.TextSize = 35.000
+        TextLabel_4.TextWrapped = true
+        TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_4.Parent = TextLabel_4
+        UITextSizeConstraint_4.MaxTextSize = 35
+        
+        TextLabel_5.Parent = ZephyrUpdate
+        TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_5.BackgroundTransparency = 1.000
+        TextLabel_5.Position = UDim2.new(0.00817661453, 0, 0.268617034, 0)
+        TextLabel_5.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_5.Font = Enum.Font.SourceSans
+        TextLabel_5.Text = "-- ArrayList Added"
+        TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_5.TextScaled = true
+        TextLabel_5.TextSize = 35.000
+        TextLabel_5.TextWrapped = true
+        TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_5.Parent = TextLabel_5
+        UITextSizeConstraint_5.MaxTextSize = 35
+        
+        TextLabel_6.Parent = ZephyrUpdate
+        TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_6.BackgroundTransparency = 1.000
+        TextLabel_6.Position = UDim2.new(0.00735895429, 0, 0.658244729, 0)
+        TextLabel_6.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_6.Font = Enum.Font.SourceSans
+        TextLabel_6.Text = "-- If there any bug contact in: https://discord.gg/fnvn2S4hmB"
+        TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_6.TextScaled = true
+        TextLabel_6.TextSize = 35.000
+        TextLabel_6.TextWrapped = true
+        TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_6.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_6.Parent = TextLabel_6
+        UITextSizeConstraint_6.MaxTextSize = 35
+        
+        Frame.Parent = ZephyrUpdate
+        Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Frame.Position = UDim2.new(-0.000177266455, 0, 0.991192102, 0)
+        Frame.Size = UDim2.new(1, 0, 0.00797872338, 0)
+        
+        Continue.Name = "Continue"
+        Continue.Parent = Frame
+        Continue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Continue.BackgroundTransparency = 1.000
+        Continue.Position = UDim2.new(0.424366295, 0, -10.000001, 0)
+        Continue.Size = UDim2.new(0.152085036, 0, 10.000001, 0)
+        Continue.Font = Enum.Font.SourceSans
+        Continue.Text = "Continue"
+        Continue.TextColor3 = Color3.fromRGB(255, 255, 255)
+        Continue.TextScaled = true
+        Continue.TextSize = 35.000
+        Continue.TextWrapped = true
+        
+        UITextSizeConstraint_7.Parent = Continue
+        UITextSizeConstraint_7.MaxTextSize = 35
+        
+        TextLabel_7.Parent = ZephyrUpdate
+        TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_7.BackgroundTransparency = 1.000
+        TextLabel_7.Position = UDim2.new(0.00817661453, 0, 0.321808517, 0)
+        TextLabel_7.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_7.Font = Enum.Font.SourceSans
+        TextLabel_7.Text = "-- Add Zephyr Notifications"
+        TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_7.TextScaled = true
+        TextLabel_7.TextSize = 35.000
+        TextLabel_7.TextWrapped = true
+        TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_7.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_8.Parent = TextLabel_7
+        UITextSizeConstraint_8.MaxTextSize = 35
+        
+        TextLabel_8.Parent = ZephyrUpdate
+        TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_8.BackgroundTransparency = 1.000
+        TextLabel_8.Position = UDim2.new(0.00735895336, 0, 0.480053246, 0)
+        TextLabel_8.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_8.Font = Enum.Font.SourceSans
+        TextLabel_8.Text = "-- Thanks Monia for helping me i love u :troll:"
+        TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_8.TextScaled = true
+        TextLabel_8.TextSize = 35.000
+        TextLabel_8.TextWrapped = true
+        TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_8.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_9.Parent = TextLabel_8
+        UITextSizeConstraint_9.MaxTextSize = 35
+        
+        TextLabel_9.Parent = ZephyrUpdate
+        TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_9.BackgroundTransparency = 1.000
+        TextLabel_9.Position = UDim2.new(0.00735895289, 0, 0.375, 0)
+        TextLabel_9.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_9.Font = Enum.Font.SourceSans
+        TextLabel_9.Text = "-- Add Betteraura"
+        TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_9.TextScaled = true
+        TextLabel_9.TextSize = 35.000
+        TextLabel_9.TextWrapped = true
+        TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_9.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_10.Parent = TextLabel_9
+        UITextSizeConstraint_10.MaxTextSize = 35
+        
+        TextLabel_10.Parent = ZephyrUpdate
+        TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_10.BackgroundTransparency = 1.000
+        TextLabel_10.Position = UDim2.new(0.00735895289, 0, 0.428191483, 0)
+        TextLabel_10.Size = UDim2.new(0.960752249, 0, 0.0531914905, 0)
+        TextLabel_10.Font = Enum.Font.SourceSans
+        TextLabel_10.Text = "-- Add Animate Remover And more!"
+        TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel_10.TextScaled = true
+        TextLabel_10.TextSize = 35.000
+        TextLabel_10.TextWrapped = true
+        TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+        TextLabel_10.TextYAlignment = Enum.TextYAlignment.Top
+        
+        UITextSizeConstraint_11.Parent = TextLabel_10
+        UITextSizeConstraint_11.MaxTextSize = 35
+        
+        -- Scripts:
+        
+        local function QJJZ_fake_script() -- Frame.LocalScript 
+            local script = Instance.new('LocalScript', Frame)
+        
+            function zigzag(X) return
+                math.acos(math.cos(X*math.pi))/math.pi end
+            
+            counter = 0
+            
+            while wait(.05) do
+                script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+                counter = counter + 0.01
+            end
+            
+        end
+        coroutine.wrap(QJJZ_fake_script)()
+        local function OQFCXH_fake_script() -- Continue.LocalScript 
+            local script = Instance.new('LocalScript', Continue)
+        
+            script.Parent.MouseButton1Down:Connect(function()
+                script.Parent.Parent.Parent.Visible = false
+            end)
+        end
+        coroutine.wrap(OQFCXH_fake_script)()
+          
+    
