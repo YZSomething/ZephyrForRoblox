@@ -1,4 +1,3 @@
-
         local ZephyrArraylist = Instance.new("ScreenGui")
         local MaxlaerArrayList = Instance.new("Frame")
         local UIGridLayout = Instance.new("UIGridLayout")
@@ -20,7 +19,7 @@
         
         UIGridLayout.Parent = MaxlaerArrayList
         UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-        UIGridLayout.CellPadding = UDim2.new(0, -20, 0, -20)
+        UIGridLayout.CellPadding = UDim2.new(0, -30, 0, -30)
         UIGridLayout.CellSize = UDim2.new(1.73899996, 0, 0.0590000004, 0)
         UIGridLayout.StartCorner = Enum.StartCorner.TopRight
         
@@ -37,7 +36,7 @@
         TextLabel.Position = UDim2.new(0.00992366951, 0, -0.0199999996, 0)
         TextLabel.Size = UDim2.new(0, 246, 0, 126)
         TextLabel.Font = Enum.Font.TitilliumWeb
-        TextLabel.Text = "zephyr v4.33"
+        TextLabel.Text = "zephyr v4.44 BETA"
         TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
         TextLabel.TextScaled = true
         TextLabel.TextSize = 14.000
@@ -102,5 +101,3 @@
             end
         end
         coroutine.wrap(CZTH_fake_script)()
-        
-    
