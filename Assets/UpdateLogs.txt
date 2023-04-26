@@ -1,4 +1,3 @@
-
         local LogGui = Instance.new("ScreenGui")
         local ZephyrUpdate = Instance.new("Frame")
         local TextLabel = Instance.new("TextLabel")

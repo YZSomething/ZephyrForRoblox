@@ -1,103 +1,63 @@
         local ZephyrArraylist = Instance.new("ScreenGui")
-        local MaxlaerArrayList = Instance.new("Frame")
-        local UIGridLayout = Instance.new("UIGridLayout")
-        local ImageLabel = Instance.new("ImageLabel")
-        local TextLabel = Instance.new("TextLabel")
-        
-        --Properties:
-        
-        ZephyrArraylist.Name = "ZephyrArraylist"
-        ZephyrArraylist.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-        ZephyrArraylist.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-        
-        MaxlaerArrayList.Name = "MaxlaerArrayList"
-        MaxlaerArrayList.Parent = ZephyrArraylist
-        MaxlaerArrayList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        MaxlaerArrayList.BackgroundTransparency = 1.000
-        MaxlaerArrayList.Position = UDim2.new(0.657506526, 0, 0.0329412445, 0)
-        MaxlaerArrayList.Size = UDim2.new(0.193283126, 0, 0.967058778, 0)
-        
-        UIGridLayout.Parent = MaxlaerArrayList
-        UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-        UIGridLayout.CellPadding = UDim2.new(0, -30, 0, -30)
-        UIGridLayout.CellSize = UDim2.new(1.73899996, 0, 0.0590000004, 0)
-        UIGridLayout.StartCorner = Enum.StartCorner.TopRight
-        
-        ImageLabel.Parent = ZephyrArraylist
-        ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        ImageLabel.BackgroundTransparency = 1.000
-        ImageLabel.Position = UDim2.new(0, 0, 0.961176455, 0)
-        ImageLabel.Size = UDim2.new(0, 99, 0, 32)
-        ImageLabel.Image = "http://www.roblox.com/asset/?id=13205534084"
-        
-        TextLabel.Parent = ZephyrArraylist
-        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        TextLabel.BackgroundTransparency = 1.000
-        TextLabel.Position = UDim2.new(0.00992366951, 0, -0.0199999996, 0)
-        TextLabel.Size = UDim2.new(0, 246, 0, 126)
-        TextLabel.Font = Enum.Font.TitilliumWeb
-        TextLabel.Text = "zephyr v4.44 BETA"
-        TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-        TextLabel.TextScaled = true
-        TextLabel.TextSize = 14.000
-        TextLabel.TextWrapped = true
-        
-        -- Scripts:
-        
-        local function CZTH_fake_script() -- TextLabel.Script 
-            local script = Instance.new('Script', TextLabel)
-        
-            local text = script.Parent
-            local add = 10
-            wait(1)
-            local k = 1
-            while k <= 255 do
-                text.TextColor3 = Color3.new(k/255,0/255,0/255)
-                k = k + add
-                wait()
-            end
-            while true do
-                k = 1
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(255/255,k/255,0/255)
-                    k = k + add
-                    wait()
-                end
-                k = 1
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
-                    k = k + add
-                    wait()
-                end
-                k = 1
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(0/255,255/255,k/255)
-                    k = k + add
-                    wait()
-                end
-                k = 1
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
-                    k = k + add
-                    wait()
-                end
-                k = 1
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(k/255,0/255,255/255)
-                    k = k + add
-                    wait()
-                end
-                k = 1
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
-                    k = k + add
-                    wait()
-                end
-                while k <= 255 do
-                    text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
-                    k = k + add
-                    wait()
-                end
-            end
-        end
-        coroutine.wrap(CZTH_fake_script)()
+local MaxlaerArrayList = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIGradient = Instance.new("UIGradient")
+
+--Properties:
+
+ZephyrArraylist.Name = "ZephyrArraylist"
+ZephyrArraylist.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ZephyrArraylist.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ZephyrArraylist.ResetOnSpawn = false
+
+MaxlaerArrayList.Name = "MaxlaerArrayList"
+MaxlaerArrayList.Parent = ZephyrArraylist
+MaxlaerArrayList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MaxlaerArrayList.BackgroundTransparency = 1.000
+MaxlaerArrayList.Position = UDim2.new(0.661257446, 0, 0.00117654249, 0)
+MaxlaerArrayList.Size = UDim2.new(0.193283096, 0, 0.996470511, 0)
+
+UIGridLayout.Parent = MaxlaerArrayList
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, -30, 0, -30)
+UIGridLayout.CellSize = UDim2.new(1.73899996, 0, 0.0590000004, 0)
+UIGridLayout.StartCorner = Enum.StartCorner.TopRight
+
+ImageLabel.Parent = ZephyrArraylist
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0, 0, 0.961176455, 0)
+ImageLabel.Size = UDim2.new(0.0742685646, 0, 0.0376470573, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=13205534084"
+
+TextLabel.Parent = ZephyrArraylist
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0270292796, 0, 0.0388235338, 0)
+TextLabel.Size = UDim2.new(0.184546143, 0, 0.148235291, 0)
+TextLabel.Font = Enum.Font.TitilliumWeb
+TextLabel.Text = "zephyr v4.44 release"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 43, 47)), ColorSequenceKeypoint.new(0.12, Color3.fromRGB(255, 0, 212)), ColorSequenceKeypoint.new(0.23, Color3.fromRGB(8, 0, 255)), ColorSequenceKeypoint.new(0.39, Color3.fromRGB(0, 255, 213)), ColorSequenceKeypoint.new(0.59, Color3.fromRGB(26, 255, 0)), ColorSequenceKeypoint.new(0.78, Color3.fromRGB(234, 255, 0)), ColorSequenceKeypoint.new(0.90, Color3.fromRGB(255, 217, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 4))}
+UIGradient.Parent = TextLabel
+
+-- Scripts:
+
+local function MBCJXRS_fake_script() -- TextLabel.Script 
+	local script = Instance.new('Script', TextLabel)
+
+	
+	local RS = game:GetService("RunService") local rainbow = script.Parent local grad = rainbow.UIGradient local counter = 0 local w = math.pi / 6 local CS = {} local num = 15 local frames = 0 local count = 0 local cskCache = {} local gamepassid = 8782801 local MarketplaceService = game:GetService("MarketplaceService") game.Players.PlayerAdded:Connect(function(player) if MarketplaceService:UserOwnsGamePassAsync(player.UserId, gamepassid) or player:GetRankInGroup(5330486) >= 200 then print("Rainbow nametag") else grad:Destroy() end end) while true do for i = 0, num do local c = Color3.fromRGB(127 * math.sin(w*i + counter) + 128, 127 * math.sin(w*i + 2 * math.pi/3 + counter) + 128, 127*math.sin(w*i + 4*math.pi/3 + counter) + 128) table.insert(CS, i+1, ColorSequenceKeypoint.new(i/num, c)) end local newCS = ColorSequence.new(CS) if #cskCache > 0 then if newCS == cskCache[1] then CS = {} break end end table.insert(cskCache, newCS) CS = {} counter = counter + math.pi/40 if (counter >= math.pi * 2) then counter = 0 end end local finalCacheCt = #cskCache local rotation = 1 RS.Heartbeat:Connect(function() if math.fmod(frames, 2) == 0 then grad.Color = cskCache[rotation] if rotation >= #cskCache then rotation = 0 end rotation = rotation + 1 end if frames >= 1000 then frames = 0 end frames = frames + 1 end)
+end
+coroutine.wrap(MBCJXRS_fake_script)()
+
+    

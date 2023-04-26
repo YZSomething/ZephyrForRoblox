@@ -102,9 +102,4 @@
             end
         end
         coroutine.wrap(CZTH_fake_script)()
-
-
-
-        if not isfile("Zephyr/Custom Module/Support.lua") then
-            writefile("Zephyr/Custom Module/Support.lua", Real8)
-        end
+    
