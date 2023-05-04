@@ -3,7 +3,7 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local lplr = Players.LocalPlayer
 local yes = Players.LocalPlayer.Name
-local ChatTag = loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/Chattags/main/Tags.lua"))()
+local ChatTag = loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/ZephyrForRoblox/main/Tags.lua"))()
 
 
 
