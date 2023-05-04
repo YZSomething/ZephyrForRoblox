@@ -1,3 +1,3 @@
 local Players = game:GetService("Players")
 
-Players.LocalPlayer:Kick("u cant leak my zephyr lol")
+Players.LocalPlayer:Kick("u can't leak this script nigga")
